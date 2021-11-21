@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="query_file.js"></script>
+</head>
+<body>
+	<div class="heading">
+		<div>
+			<h1>Class Marksheet</h1>
+		</div>
+		<form class="input-field">
+			<div class="row">
+				<div class="col-25">
+					<label>Họ Tên:</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="name" value="Minh Thinh">
+				</div>
+			</div>
+			<div>
+				<div class="col-25">
+					<label>Điểm toán:</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="math" value="9">
+				</div>
+			</div>
+			<div>
+				<div class="col-25">
+					<label>Điểm lý:</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="physical" value="9">
+				</div>
+			</div>
+			<div>
+				<div class="col-25">
+					<label>Điểm hoá:</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="chemistry" value="9" max="10">
+				</div>
+			</div>
+		</form>
+		<div style="margin: 25px;">
+				<button class="add-user-btn btn">Nhập</button>
+		</div>	
+	</div>
+	<div class="table">
+		<table id="myTable">
+			<tr>
+				<th>STT</th>
+				<th class="space">Họ Tên</th>
+				<th>Toán</th>
+				<th>Lý</th>
+				<th>Hoá</th>
+				<th>Trung bình</th>
+			</tr>
+		</table>
+		<div style="margin: 25px;" class="button">
+			<button class="avg-btn btn">Tính điểm trung bình</button>
+			<button class="excell-student-btn btn">Xác định học sinh giỏi</button>
+		</div>
+	</div>
+</body>
+</html>
